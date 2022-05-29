@@ -586,10 +586,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ikActive: 1
   _pointRightHand: {fileID: 1079991436}
+  _pointLeftHand: {fileID: 1173931498}
   _pointLook: {fileID: 1768063885}
   _rayLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 65
   _footTransform: {fileID: 1824139267}
   _offsetFootL: {x: 0, y: 0, z: 0}
   _offsetFootR: {x: 0, y: 0, z: 0}
@@ -2208,6 +2209,21 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9a642e634567313449881e17227b618a, type: 2}
+    - target: {fileID: 5866666021909216657, guid: e0df5564e88676d4096c08f50ad218ee, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: e0df5564e88676d4096c08f50ad218ee, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'swat:Hips'\n\tTransform 'swat:RightHandIndex1'\n\tTransform
+        'swat:LeftToeBase'\n\tTransform 'swat:LeftShoulder'\n\tTransform 'swat:Head'\n\tTransform
+        'swat:LeftLeg'\n\tTransform 'swat:RightHandMiddle1'\n\tTransform 'swat:RightShoulder'\n\tTransform
+        'swat:LeftHandIndex1'\n\tTransform 'swat:RightHandRing2'\n\tand more ...\n\tFrom
+        animation clip 'Hit Reaction'\n\tFrom animation clip 'run_left'\n\tFrom animation
+        clip 'run_right'"
+      objectReference: {fileID: 0}
     - target: {fileID: 6345216232441320540, guid: e0df5564e88676d4096c08f50ad218ee, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -3326,6 +3342,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091091633}
   m_CullTransparentMesh: 1
+--- !u!1 &1173931497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1173931498}
+  m_Layer: 0
+  m_Name: PointLeftHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1173931498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173931497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 387.878, y: 1.256, z: 39.261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1254956644
 GameObject:
   m_ObjectHideFlags: 0

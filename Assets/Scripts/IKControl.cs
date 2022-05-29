@@ -12,7 +12,10 @@ public class IKControl : MonoBehaviour
     private bool _ikActive;
 
     [SerializeField]
-    private Transform _pointRightHand ;
+    private Transform _pointRightHand;
+
+    [SerializeField]
+    private Transform _pointLeftHand; 
 
     [SerializeField]
     private Transform _pointLook;
@@ -53,6 +56,9 @@ public class IKControl : MonoBehaviour
             ChangeWeightAvatar(AvatarIKGoal.RightHand, 1);
             _animator.SetIKPosition(AvatarIKGoal.RightHand, _pointRightHand.position);
             _animator.SetIKRotation(AvatarIKGoal.RightHand, _pointRightHand.rotation);
+            ChangeWeightAvatar(AvatarIKGoal.LeftHand, 1);
+            _animator.SetIKPosition(AvatarIKGoal.LeftHand, _pointLeftHand.position);
+            _animator.SetIKRotation(AvatarIKGoal.LeftHand, _pointLeftHand.rotation);
 
             LegsIk();
         }
@@ -90,3 +96,4 @@ public class IKControl : MonoBehaviour
         _animator.SetIKRotationWeight(avatarIKGoal, value);
     }
 }
+    
